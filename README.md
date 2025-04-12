@@ -24,6 +24,88 @@ The feature selection techniques used are:
 3.Embedded Method
 
 # CODING AND OUTPUT:
-       # INCLUDE YOUR CODING AND OUTPUT SCREENSHOTS HERE
+```
+NAME : KAVIYA D
+REGISTER NUMBER : 212223040089
+```
+
+```
+import pandas as pd
+import numpy as np
+```
+```
+df=pd.read_csv('/content/bmi.csv')
+df
+```
+IMG
+```
+df.head()
+```
+IMG
+```
+df.dropna()
+```
+```
+max_vals=np.max(np.abs(df[['Height','Weight']]))
+max_vals
+```
+199
+```
+from sklearn.preprocessing import MinMaxScaler
+scaler=MinMaxScaler()
+df[['Height','Weight']]=scaler.fit_transform(df[['Height','Weight']])
+df.head(10)
+```
+IMG
+```
+df1=pd.read_csv('/content/bmi.csv')
+df2=pd.read_csv('/content/bmi.csv')
+df3=pd.read_csv('/content/bmi.csv')
+df4=pd.read_csv('/content/bmi.csv')
+df5=pd.read_csv('/content/bmi.csv')
+df5
+```
+IMG
+```
+from sklearn.preprocessing import StandardScaler
+sc=StandardScaler()
+df1[['Height','Weight']]=sc.fit_transform(df1[['Height','Weight']])
+df.head(10)
+```
+IMG
+```
+from sklearn.preprocessing import Normalizer
+scaler=Normalizer()
+df2[['Height','Weight']]=scaler.fit_transform(df2[['Height','Weight']])
+df2
+```
+IMG
+```
+from sklearn.preprocessing import MaxAbsScaler
+max1=MaxAbsScaler()
+df3[['Height','weight']]=max1.fit_transform(df3[['Height','Weight']])
+df3
+```
+IMG
+```
+from sklearn.preprocessing import RobustScaler
+roub=RobustScaler()
+df4[['Height','Weight']]=roub.fit_transform(df4[['Height','Weight']])
+df4
+```
+IMG
+```
+from sklearn.feature_selection import SelectKBest,f_regression,mutual_info_classif
+from sklearn.feature_selection import chi2
+data=pd.read_csv('/content/income.csv')
+data
+```
+IMG
+```
+data1=pd.read_csv('/content/titanic_dataset (1).csv')
+data1
+```
+IMG
+
 # RESULT:
        # INCLUDE YOUR RESULT HERE
