@@ -75,7 +75,7 @@ df2=pd.read_csv('/content/bmi.csv')
 df3=pd.read_csv('/content/bmi.csv')
 df4=pd.read_csv('/content/bmi.csv')
 df5=pd.read_csv('/content/bmi.csv')
-df5
+df1
 ```
 
 ![image](https://github.com/user-attachments/assets/3c88eba3-90b8-4c3f-9555-ccfc8ba760f9)
@@ -136,15 +136,6 @@ data1
 
 ![image](https://github.com/user-attachments/assets/40be0a5f-d7fc-46d1-8ce8-4e37a8bab56b)
 
-
-```
-data1=data1.dropna()
-x=data1.drop(['Survived','Name','Ticket'],axis=1)
-y=data1['Survived']
-data1['Sex']=data1['Sex'].astype('category')
-data1['Cabin']=data1['Cabin'].astype('category')
-data1['Embarked']=data1['Embarked'].astype('category')
-```
 
 
 
